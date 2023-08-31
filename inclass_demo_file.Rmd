@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # First Paragraph
 
+The `irg` package is based on the procedure proposed in Heerah et al. (2021).
+
 # Code chunk
 
 # Second Paragraph
