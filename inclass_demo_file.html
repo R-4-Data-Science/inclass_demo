@@ -253,6 +253,28 @@ if (window.hljs) {
 
 
 
+<style type="text/css">
+
+div.csl-bib-body { }
+div.csl-entry {
+clear: both;
+}
+.hanging div.csl-entry {
+margin-left:2em;
+text-indent:-2em;
+}
+div.csl-left-margin {
+min-width:2em;
+float:left;
+}
+div.csl-right-inline {
+margin-left:2em;
+padding-left:1em;
+}
+div.csl-indent {
+margin-left: 2em;
+}
+</style>
 
 
 
@@ -299,17 +321,23 @@ overflow-y: auto;
 border: 1px solid #ddd;
 border-radius: 4px;
 }
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+content: "";
 font-family: 'Glyphicons Halflings';
 display: inline-block;
 padding: 10px;
 border-right: 1px solid #ddd;
 }
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-content: "\e258";
-font-family: 'Glyphicons Halflings';
+content: "";
 border: none;
+}
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+content: "";
+font-family: 'Glyphicons Halflings';
+display: inline-block;
+padding: 10px;
+border-right: 1px solid #ddd;
 }
 .tabset-dropdown > .nav-tabs > li.active {
 display: block;
@@ -357,14 +385,9 @@ display: none;
 </div>
 
 
-<div id="first-paragraph" class="section level1">
-<h1>First Paragraph</h1>
-</div>
-<div id="code-chunk" class="section level1">
-<h1>Code chunk</h1>
-</div>
-<div id="second-paragraph" class="section level1">
-<h1>Second Paragraph</h1>
+<p>The <code>irg</code> package is based on the procedure proposed in
+<span class="citation">Heerah et al. (2021)</span>.</p>
+<pre class="r"><code>library(irg)</code></pre>
 <p>The functions made available allow to perform Granger-Causal testing
 for signals that are sampled at the same but irregularly spaced time
 points. Before using the functions in the package, the signals need to
@@ -372,6 +395,16 @@ be pre-processed such that they are detrended (mean-stationary) and
 standardized (normalized). Below we show some examples of possible ways
 of pre-processing the signals as well as how to use the main functions
 of the package.</p>
+<div id="references" class="section level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-heerah2021granger" class="csl-entry">
+Heerah, Sachin, Roberto Molinari, Stéphane Guerrier, and Amy
+Marshall-Colon. 2021. <span>“Granger-Causal Testing for Irregularly
+Sampled Time Series with Application to Nitrogen Signalling in
+Arabidopsis.”</span> <em>Bioinformatics</em> 37 (16): 2450–60.
+</div>
+</div>
 </div>
 
 
