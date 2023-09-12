@@ -3,7 +3,7 @@ title: "In Class Demo"
 author: "Rob Molinari"
 date: "2023-08-31"
 output: html_document
-bibliography: bilbio.bib
+bibliography: biblio.bib
 ---
 
 ```{r setup, include=FALSE}
