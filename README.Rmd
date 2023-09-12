@@ -1,0 +1,22 @@
+---
+title: "In Class Demo"
+author: "Rob Molinari"
+date: "2023-08-31"
+output: html_document
+bibliography: biblio.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+The `irg` package is based on the procedure proposed in @heerah2021granger.
+
+```{r}
+library(irg)
+```
+
+The functions made available allow to perform Granger-Causal testing for signals that are sampled at the same but irregularly spaced time points. Before using the functions in the package, the signals need to be pre-processed such that they are detrended (mean-stationary) and standardized (normalized). Below we show some examples of possible ways of pre-processing the signals as well as how to use the main functions of the package.
+
+# References
